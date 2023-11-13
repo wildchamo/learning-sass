@@ -8,4 +8,10 @@ $font-stack: "IBM Plex Sans", sans-serif;
 body {
   margin: 0;
   padding: 0;
+  background-color: $background-primary-color;
+}
+
+footer {
+  $bg-color: #fa9500;
+  background-color: $bg-color;
 }
