@@ -16,7 +16,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  
+
   p {
     color: $primary-text-color;
     font-weight: bold;
@@ -28,6 +28,64 @@ nav {
     button {
       background: none;
       border-style: none;
+    }
+  }
+}
+
+.main-section {
+  color: $primary-text-color;
+
+  article {
+    display: flex;
+    padding: 0 15px;
+
+    @media (max-width: 768px) {
+      // Cuando la pantalla tiene 768px o menos
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    button {
+      $bg-color: #fa9500;
+      background-color: $bg-color;
+      border: none;
+      color: white;
+      border-radius: 35px;
+      width: 250px;
+      height: 70px;
+      font-weight: bold;
+      font-size: 23px;
+
+      @media (max-width: 768px) {
+        // Cuando la pantalla tiene 768px o menos
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+
+        align-items: center;
+      }
+    }
+    img {
+      width: 60vh;
+      border-radius: 19px;
+    }
+
+    h1 {
+      font-size: 60px; // Tamaño por defecto para desktop
+
+      @media (max-width: 768px) {
+        // Cuando la pantalla tiene 768px o menos
+        font-size: 28px; // Cambiamos el tamaño para móvil
+      }
+    }
+
+    p {
+      font-size: 25px; // Tamaño por defecto para desktop
+
+      @media (max-width: 768px) {
+        // Cuando la pantalla tiene 768px o menos
+        font-size: 15px; // Cambiamos el tamaño para móvil
+      }
     }
   }
 }
