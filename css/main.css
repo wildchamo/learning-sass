@@ -76,6 +76,23 @@ nav .icons button {
   }
 }
 
+.cards-section {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.card {
+  width: 50vw;
+  color: white;
+  background-color: #babd8d;
+  padding: 20px;
+}
+.card img {
+  width: 132px;
+  border-radius: 6px;
+}
+
 footer {
   background-color: #fa9500;
   width: 100%;

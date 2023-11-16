@@ -90,6 +90,24 @@ nav {
   }
 }
 
+.cards-section{
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+    
+}
+
+.card{
+  width: 50vw;
+  color: white;
+  background-color: $tertiary-color;
+  padding: 20px;
+  img{
+    width: 132px;
+    border-radius: 6px;
+  }
+}
+
 footer {
   $bg-color: #fa9500;
   background-color: $bg-color;
