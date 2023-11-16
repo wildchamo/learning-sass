@@ -38,8 +38,11 @@ nav .icons button {
   }
 }
 .main-section article button {
+  background: none;
+  border-style: none;
+}
+.main-section article button {
   background-color: #fa9500;
-  border: none;
   color: white;
   border-radius: 35px;
   width: 250px;
@@ -95,6 +98,10 @@ nav .icons button {
 .cuidados .card img, .furnite .card img {
   width: 132px;
   border-radius: 6px;
+}
+
+.furnite .card {
+  background-color: #ffdac6;
 }
 
 footer {

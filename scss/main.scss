@@ -5,6 +5,14 @@ $tertiary-color: #babd8d;
 $primary-text-color: #7c6a0a;
 $font-stack: "IBM Plex Sans", sans-serif;
 
+@mixin buttonStyle {
+  button {
+    background: none;
+    border-style: none;
+  }
+}
+
+
 body {
   margin: 0px;
   padding: 0px;
@@ -25,10 +33,7 @@ nav {
   .icons {
     display: flex;
     gap: 1px;
-    button {
-      background: none;
-      border-style: none;
-    }
+    @include buttonStyle();
   }
 }
 
@@ -44,11 +49,10 @@ nav {
       flex-direction: column-reverse;
       align-items: center;
     }
-
+    @include buttonStyle();
     button {
       $bg-color: #fa9500;
       background-color: $bg-color;
-      border: none;
       color: white;
       border-radius: 35px;
       width: 250px;
@@ -112,13 +116,16 @@ nav {
       border-radius: 6px;
     }
   }
-
 }
 
-
-.furnite{
+.furnite {
   @extend .cuidados;
+
+  .card{
+    background-color: $secundary-color;
+  }
 }
+
 footer {
   $bg-color: #fa9500;
   background-color: $bg-color;
