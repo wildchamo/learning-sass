@@ -90,24 +90,35 @@ nav {
   }
 }
 
-.cards-section{
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-    
-}
-
-.card{
-  width: 50vw;
-  color: white;
-  background-color: $tertiary-color;
-  padding: 20px;
-  img{
-    width: 132px;
-    border-radius: 6px;
+.cuidados {
+  .cards-section {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
   }
+
+  .card {
+    width: 50vw;
+    color: white;
+    background-color: $tertiary-color;
+    padding: 0 20px 20px 20px;
+    .icon-container {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 10px;
+    }
+    img {
+      width: 132px;
+      border-radius: 6px;
+    }
+  }
+
 }
 
+
+.furnite{
+  @extend .cuidados;
+}
 footer {
   $bg-color: #fa9500;
   background-color: $bg-color;
